@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "630428483717",
+    "project_id": "localshop-c6b0f",
+    "storage_bucket": "localshop-c6b0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630428483717:android:262b08c0e3d8bf3a19e9ec",
+        "android_client_info": {
+          "package_name": "com.app.locxshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630428483717-scedm2a05du8u8auhqk09fqg33ia8flq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.locxshop",
+            "certificate_hash": "ddb8afb44eba16ef2581771de694ac2186be5c8c"
+          }
+        },
+        {
+          "client_id": "630428483717-9l971918kfo9ikgg2omjo8jbq8p22ae8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpcG33-2m6H_VmMGTJFhxIwagoOtSgpak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630428483717-9l971918kfo9ikgg2omjo8jbq8p22ae8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

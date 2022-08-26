@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#2E7D32</color>
+    <color name="colorAccent">#FB8C00</color>
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="colorGrey_10">#CFD8DC</color>
+    <color name="colorWhiteTrans">#1Affffff</color>
+    <color name="colorRedTrans">#1Affcdd2</color>
+    <color name="colotGreen">#43A047</color>
+    <color name="colorDarkGrey">#424242</color>
+    <color name="colorGreyLight">#F5F5F5</color>
+
+    <color name="card1">#d4cbe5</color>
+    <color name="card2">#7adccf</color>
+    <color name="card3">#f7c59f</color>
+    <color name="card4">#b8d7f5</color>
+    <color name="card5">#e27c6f</color>
+    <color name="card6">#c9e3db</color>
+    <color name="card7">#86d098</color>
+
+    // Splash Screen
+    <color name="splash_bac">#64DD17</color>
+    <color name="splash_text">#212121</color>
+
+    // Login Screen
+    <color name="login_src">#64DD17</color>
+    <color name="text_col">#212121</color>
+
+    //Signup Screen
+    <color name="sign_src">#64DD17</color>
+    <color name="msg_col">#212121</color>
+
+    // MainActivity Screen
+    <color name="main_bac">#64DD17</color>
+    <color name="main_col">#212121</color>
+
+
+
+
+
+</resources>

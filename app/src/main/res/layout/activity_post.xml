@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".activities.PostActivity">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_bac">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_bac"
+            android:id="@+id/toolbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_close"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/close"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POST"
+                    android:textColor="@color/main_col"
+                    android:textStyle="bold"
+                    android:id="@+id/post"
+                    android:textSize="16sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tfsname"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Shop Name"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sname"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tfoname"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Owner Name"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/oname"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Shop/Store Photo Below:-"
+                android:textStyle="bold"
+                android:textColor="@color/main_col"
+                android:layout_marginTop="@dimen/margin_20"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edits"
+                android:layout_marginTop="@dimen/margin_20"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                android:id="@+id/photos"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_gravity="center">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="150dp"
+                    android:layout_height="62dp"
+                    android:hint="State"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+
+
+                    <AutoCompleteTextView
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:inputType="none"
+                        android:enabled="false"
+                        android:id="@+id/auto"
+                        android:textColor="#000000"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="150dp"
+                    android:layout_height="62dp"
+                    android:layout_marginStart="40dp"
+                    android:hint="City"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+
+
+                    <AutoCompleteTextView
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:inputType="none"
+                        android:enabled="false"
+                        android:id="@+id/city"
+                        android:textColor="#000000"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tfdesc"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Address"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/desc"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tfonum"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Contact Number"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/onum"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_10">
+            <RadioButton
+                android:id="@+id/fulltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full-Time"
+                android:textColor="@color/main_col"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingRight="@dimen/margin_20"/>
+
+            <RadioButton
+                android:id="@+id/parttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Part-Time"
+                android:textStyle="bold"
+                android:textColor="@color/main_col"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingRight="@dimen/margin_20"/>
+        </RadioGroup>
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/btn_post"-->
+<!--            android:text="Post"-->
+<!--            android:backgroundTint="@color/login_src"-->
+<!--            android:textColor="@color/text_col"-->
+<!--            android:textStyle="bold"-->
+<!--            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"-->
+<!--            app:cornerRadius="4dp"-->
+<!--            android:layout_marginTop="@dimen/margin_20"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="?attr/actionBarSize" />-->
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
